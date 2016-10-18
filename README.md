@@ -1,5 +1,5 @@
 #UUID package for Go language
-=
+
 
     This package provides pure Go implementation of Universally Unique Identifier (UUID). Supported both creation and parsing of UUIDs.
 
@@ -15,16 +15,16 @@
 
 
 ##Installation
--
+
 Use the `go` command:
 ```
 $ go get github.com/satori/go.uuid
 ```
 
 ##Requirements
--
 
-    #####UUID package requires Go &gt;= 1.2.###
+
+    UUID package requires Go &gt;= 1.2.
 
 ##Example
 ```js
@@ -50,12 +50,12 @@ func main() {
 ```
 
 ##Documentation
--
+
 
 <p><a href="http://godoc.org/github.com/satori/go.uuid">Documentation</a> is hosted at GoDoc project.</p>
 
 ##Links
---
+
 
 <ul>
 <li><a href="http://tools.ietf.org/html/rfc4122">RFC 4122</a></li>
@@ -63,7 +63,7 @@ func main() {
 </ul>
 
 
-<h2>Copyright</h2>
+##Copyright
 
 <p>Copyright (C) 2013-2016 by Maxim Bublis <a href="mailto:b@codemonkey.ru">b@codemonkey.ru</a>.</p>
 
