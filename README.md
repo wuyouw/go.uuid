@@ -21,38 +21,41 @@ Use the `go` command:
 $ go get github.com/satori/go.uuid
 ```
 
-<h2>Requirements</h2>
+##Requirements
+-
 
-<p>UUID package requires Go &gt;= 1.2.</p>
+###UUID package requires Go &gt;= 1.2.###
 
-<h2>Example</h2>
+##Example
+```js
+package main
 
-<div class="highlight highlight-source-go"><pre><span class="pl-k">package</span> main
-
-<span class="pl-k">import</span> (
-    <span class="pl-s"><span class="pl-pds">"</span>fmt<span class="pl-pds">"</span></span>
-    <span class="pl-s"><span class="pl-pds">"</span>github.com/satori/go.uuid<span class="pl-pds">"</span></span>
+import (
+    "fmt"
+    "github.com/satori/go.uuid"
 )
 
-<span class="pl-k">func</span> <span class="pl-en">main</span>() {
-    <span class="pl-c">// Creating UUID Version 4</span>
-    <span class="pl-smi">u1</span> <span class="pl-k">:=</span> uuid.<span class="pl-c1">NewV4</span>()
-    fmt.<span class="pl-c1">Printf</span>(<span class="pl-s"><span class="pl-pds">"</span>UUIDv4: <span class="pl-c1">%s</span><span class="pl-cce">\n</span><span class="pl-pds">"</span></span>, u1)
+func main() {
+    // Creating UUID Version 4
+    u1 := uuid.NewV4()
+    fmt.Printf("UUIDv4: %s\n", u1)
 
-    <span class="pl-c">// Parsing UUID from string input</span>
-    <span class="pl-smi">u2</span>, <span class="pl-smi">err</span> <span class="pl-k">:=</span> uuid.<span class="pl-c1">FromString</span>(<span class="pl-s"><span class="pl-pds">"</span>6ba7b810-9dad-11d1-80b4-00c04fd430c8<span class="pl-pds">"</span></span>)
-    <span class="pl-k">if</span> err != <span class="pl-c1">nil</span> {
-        fmt.<span class="pl-c1">Printf</span>(<span class="pl-s"><span class="pl-pds">"</span>Something gone wrong: <span class="pl-c1">%s</span><span class="pl-pds">"</span></span>, err)
+    // Parsing UUID from string input
+    u2, err := uuid.FromString("6ba7b810-9dad-11d1-80b4-00c04fd430c8")
+    if err != nil {
+        fmt.Printf("Something gone wrong: %s", err)
     }
-    fmt.<span class="pl-c1">Printf</span>(<span class="pl-s"><span class="pl-pds">"</span>Successfully parsed: <span class="pl-c1">%s</span><span class="pl-pds">"</span></span>, u2)
-}</pre></div>
+    fmt.Printf("Successfully parsed: %s", u2)
+}
+```
 
-
-<h2>Documentation</h2>
+##Documentation
+-
 
 <p><a href="http://godoc.org/github.com/satori/go.uuid">Documentation</a> is hosted at GoDoc project.</p>
 
-<h2>Links</h2>
+##Links
+--
 
 <ul>
 <li><a href="http://tools.ietf.org/html/rfc4122">RFC 4122</a></li>
