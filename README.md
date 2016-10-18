@@ -1,28 +1,36 @@
-<h1>UUID package for Go language</h1>
+#UUID package for Go language
+=
 
-<p><a href="https://travis-ci.org/satori/go.uuid"><img src="https://camo.githubusercontent.com/078cc19fc0d8475c7f8b47cc54eb2f842038b767/68747470733a2f2f7472617669732d63692e6f72672f7361746f72692f676f2e757569642e706e673f6272616e63683d6d6173746572" alt="Build Status" data-canonical-src="https://travis-ci.org/satori/go.uuid.png?branch=master" style="max-width:100%;"></a>
-<a href="https://coveralls.io/github/satori/go.uuid"><img src="https://camo.githubusercontent.com/666bfd05a8c5d534b9292f69384ae5234aa100e4/68747470733a2f2f636f766572616c6c732e696f2f7265706f732f6769746875622f7361746f72692f676f2e757569642f62616467652e7376673f6272616e63683d6d6173746572" alt="Coverage Status" data-canonical-src="https://coveralls.io/repos/github/satori/go.uuid/badge.svg?branch=master" style="max-width:100%;"></a>
-<a href="http://godoc.org/github.com/satori/go.uuid"><img src="https://camo.githubusercontent.com/72c2c13d92376f4881bd64d2ab1ba05e59e5ac40/687474703a2f2f676f646f632e6f72672f6769746875622e636f6d2f7361746f72692f676f2e757569643f7374617475732e706e67" alt="GoDoc" data-canonical-src="http://godoc.org/github.com/satori/go.uuid?status.png" style="max-width:100%;"></a></p>
+[![]](https://travis-ci.org/satori/go.uuid)
+[]https://camo.githubusercontent.com/078cc19fc0d8475c7f8b47cc54eb2f842038b767/68747470733a2f2f7472617669732d63692e6f72672f7361746f72692f676f2e757569642e706e673f6272616e63683d6d6173746572 "Build Status" 
 
-<p>This package provides pure Go implementation of Universally Unique Identifier (UUID). Supported both creation and parsing of UUIDs.</p>
+[![]](https://coveralls.io/github/satori/go.uuid)
+[]https://camo.githubusercontent.com/666bfd05a8c5d534b9292f69384ae5234aa100e4/68747470733a2f2f636f766572616c6c732e696f2f7265706f732f6769746875622f7361746f72692f676f2e757569642f62616467652e7376673f6272616e63683d6d6173746572 "Coverage Status" 
 
-<p>With 100% test coverage and benchmarks out of box.</p>
+[![]](http://godoc.org/github.com/satori/go.uuid)
+[]https://camo.githubusercontent.com/72c2c13d92376f4881bd64d2ab1ba05e59e5ac40/687474703a2f2f676f646f632e6f72672f6769746875622e636f6d2f7361746f72692f676f2e757569643f7374617475732e706e67 "GoDoc"
 
-<p>Supported versions:</p>
-<ul>
-<li>Version 1, based on timestamp and MAC address (RFC 4122)</li>
-<li>Version 2, based on timestamp, MAC address and POSIX UID/GID (DCE 1.1)</li>
-<li>Version 3, based on MD5 hashing (RFC 4122)</li>
-<li>Version 4, based on random numbers (RFC 4122)</li>
-<li>Version 5, based on SHA-1 hashing (RFC 4122)</li>
-</ul>
 
-<h2>Installation</h2>
 
-<p>Use the <code>go</code> command:</p>
+    This package provides pure Go implementation of Universally Unique Identifier (UUID). Supported both creation and parsing of UUIDs.
 
-<pre><code>$ go get github.com/satori/go.uuid
-</code></pre>
+    With 100% test coverage and benchmarks out of box.
+
+    Supported versions:
+
+    * Version 1, based on timestamp and MAC address (RFC 4122)
+    * Version 2, based on timestamp, MAC address and POSIX UID/GID (DCE 1.1)
+    * Version 3, based on MD5 hashing (RFC 4122)
+    * Version 4, based on random numbers (RFC 4122)
+    * Version 5, based on SHA-1 hashing (RFC 4122)
+
+
+##Installation
+-
+Use the 'go' command:
+
+$ go get github.com/satori/go.uuid
+
 
 <h2>Requirements</h2>
 
