@@ -24,7 +24,7 @@ $ go get github.com/satori/go.uuid
 ##Requirements
 
 
-    UUID package requires Go &gt;= 1.2.
+UUID package requires Go >= 1.2.
 
 ##Example
 ```js
