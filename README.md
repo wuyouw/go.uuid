@@ -27,7 +27,7 @@
 
 ##Installation
 -
-Use the 'go' command:
+Use the `go` command:
 
 $ go get github.com/satori/go.uuid
 
